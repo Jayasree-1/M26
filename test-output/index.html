@@ -50,17 +50,17 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
-                    <span>C:\Users\rekha\eclipse-workspace\AutomationFramework.Java\testng-DistributedParallelExecution.xml</span>
+                    <span>C:\Users\rekha\eclipse-workspace\AutomationFramework.Java\testng-SmokeSuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
                   <a href="#" panel-name="testlist-Suite" class="navigator-link ">
-                    <span class="test-stats">2 tests</span>
+                    <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
                   <a href="#" panel-name="group-Suite" class="navigator-link ">
-                    <span>2 groups</span>
+                    <span>1 group</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">1 method,   1 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -101,11 +101,6 @@
                       <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
                     </span>
                     <div class="method-list-content passed suite-Suite">
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="inventoryTests.AddLowestPriceProducttoCartTest" class="method navigator-link" hash-for-method="addLowestPriceProductTest">addLowestPriceProductTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="inventoryTests.MakeanOrderTest" class="method navigator-link" hash-for-method="tc_001_MakeanOrderTest">tc_001_MakeanOrderTest</a> <!-- method navigator-link -->
@@ -138,41 +133,31 @@
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">inventoryTests.AddLowestPriceProducttoCartTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="addLowestPriceProductTest">
-                  </a> <!-- addLowestPriceProductTest -->
-                  <span class="method-name">addLowestPriceProductTest</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\rekha\eclipse-workspace\AutomationFramework.Java\testng-DistributedParallelExecution.xml</span>
+            <span class="header-content">C:\Users\rekha\eclipse-workspace\AutomationFramework.Java\testng-SmokeSuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite thread-count=&quot;2&quot; parallel=&quot;tests&quot; name=&quot;Suite&quot;&gt;
-  &lt;test thread-count=&quot;2&quot; parallel=&quot;tests&quot; name=&quot;Test1&quot;&gt;
-    &lt;classes&gt;
-      &lt;class name=&quot;inventoryTests.AddLowestPriceProducttoCartTest&quot;/&gt;
-    &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Test1 --&gt;
-  &lt;test thread-count=&quot;2&quot; parallel=&quot;tests&quot; name=&quot;Test2&quot;&gt;
+&lt;suite name=&quot;Suite&quot;&gt;
+  &lt;groups&gt;
+    &lt;run&gt;
+      &lt;include name=&quot;SmokeSuite&quot;/&gt;
+    &lt;/run&gt;
+  &lt;/groups&gt;
+  &lt;groups&gt;
+    &lt;run&gt;
+      &lt;include name=&quot;SmokeSuite&quot;/&gt;
+    &lt;/run&gt;
+  &lt;/groups&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;inventoryTests.MakeanOrderTest&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Test2 --&gt;
+  &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -184,10 +169,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test1 (1 class)</span>
-              </li>
-              <li>
-                <span class="test-name">Test2 (1 class)</span>
+                <span class="test-name">Test (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -197,14 +179,6 @@
             <span class="header-content">Groups for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="test-group">
-              <span class="test-group-name">RegressionSuite</span>
-              <br/>
-              <div class="method-in-group">
-                <span class="method-in-group-name">addLowestPriceProductTest</span>
-                <br/>
-              </div> <!-- method-in-group -->
-            </div> <!-- test-group -->
             <div class="test-group">
               <span class="test-group-name">SmokeSuite</span>
               <br/>
@@ -229,20 +203,16 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'tc_001_MakeanOrderTest')
 data.setCell(0, 2, 'inventoryTests.MakeanOrderTest')
-data.setCell(0, 3, 15168);
-data.setCell(1, 0, 1)
-data.setCell(1, 1, 'addLowestPriceProductTest')
-data.setCell(1, 2, 'inventoryTests.AddLowestPriceProducttoCartTest')
-data.setCell(1, 3, 11103);
+data.setCell(0, 3, 11782);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 28 seconds</span>
+              <span class="suite-total-time">Total running time: 11 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -273,67 +243,29 @@ return data;
                 <span class="method-name">bsConfig</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
-              <div class="configuration-test before">
+              <div class="configuration-class before">
                 <span class="method-name">bcConfig</span>
                 <span class="method-start">44 ms</span>
-              </div> <!-- configuration-test before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">inventoryTests.AddLowestPriceProducttoCartTest</div> <!-- chronological-class-name -->
-              <div class="configuration-test before">
-                <span class="method-name">bcConfig</span>
-                <span class="method-start">46 ms</span>
-              </div> <!-- configuration-test before -->
+              </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">bmConfig</span>
-                <span class="method-start">4751 ms</span>
+                <span class="method-start">39254 ms</span>
               </div> <!-- configuration-method before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">inventoryTests.MakeanOrderTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">bmConfig</span>
-                <span class="method-start">6394 ms</span>
-              </div> <!-- configuration-method before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">inventoryTests.AddLowestPriceProducttoCartTest</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">addLowestPriceProductTest</span>
-                <span class="method-start">11360 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">inventoryTests.MakeanOrderTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">tc_001_MakeanOrderTest</span>
-                <span class="method-start">11996 ms</span>
+                <span class="method-start">45037 ms</span>
               </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">inventoryTests.AddLowestPriceProducttoCartTest</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
                 <span class="method-name">amConfig</span>
-                <span class="method-start">22468 ms</span>
+                <span class="method-start">56824 ms</span>
               </div> <!-- configuration-method after -->
-              <div class="configuration-test after">
+              <div class="configuration-class after">
                 <span class="method-name">acConfig</span>
-                <span class="method-start">23164 ms</span>
-              </div> <!-- configuration-test after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">inventoryTests.MakeanOrderTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method after">
-                <span class="method-name">amConfig</span>
-                <span class="method-start">27168 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-test after">
-                <span class="method-name">acConfig</span>
-                <span class="method-start">27549 ms</span>
-              </div> <!-- configuration-test after -->
+                <span class="method-start">57320 ms</span>
+              </div> <!-- configuration-class after -->
               <div class="configuration-suite after">
                 <span class="method-name">asConfig</span>
-                <span class="method-start">28546 ms</span>
+                <span class="method-start">59189 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

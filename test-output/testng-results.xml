@@ -1,44 +1,69 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-04-23T08:42:03 IST" name="Suite" finished-at="2025-04-23T08:43:02 IST" duration-ms="59132">
+  <suite started-at="2025-04-23T08:49:13 IST" name="Suite" finished-at="2025-04-23T08:50:06 IST" duration-ms="53199">
     <groups>
+      <group name="RegressionSuite">
+        <method signature="AddLowestPriceProducttoCartTest.addLowestPriceProductTest()[pri:0, instance:inventoryTests.AddLowestPriceProducttoCartTest@367ffa75]" name="addLowestPriceProductTest" class="inventoryTests.AddLowestPriceProducttoCartTest"/>
+      </group> <!-- RegressionSuite -->
       <group name="SmokeSuite">
-        <method signature="MakeanOrderTest.tc_001_MakeanOrderTest()[pri:0, instance:inventoryTests.MakeanOrderTest@ba2f4ec]" name="tc_001_MakeanOrderTest" class="inventoryTests.MakeanOrderTest"/>
+        <method signature="MakeanOrderTest.tc_001_MakeanOrderTest()[pri:0, instance:inventoryTests.MakeanOrderTest@1ce24091]" name="tc_001_MakeanOrderTest" class="inventoryTests.MakeanOrderTest"/>
       </group> <!-- SmokeSuite -->
     </groups>
-    <test started-at="2025-04-23T08:42:03 IST" name="Test" finished-at="2025-04-23T08:43:02 IST" duration-ms="59132">
+    <test started-at="2025-04-23T08:49:13 IST" name="Test" finished-at="2025-04-23T08:50:06 IST" duration-ms="53199">
       <class name="inventoryTests.MakeanOrderTest">
-        <test-method is-config="true" signature="bsConfig()[pri:0, instance:inventoryTests.MakeanOrderTest@ba2f4ec]" started-at="2025-04-23T08:42:03 IST" name="bsConfig" finished-at="2025-04-23T08:42:03 IST" duration-ms="15" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- bsConfig -->
-        <test-method is-config="true" signature="bcConfig()[pri:0, instance:inventoryTests.MakeanOrderTest@ba2f4ec]" started-at="2025-04-23T08:42:03 IST" name="bcConfig" finished-at="2025-04-23T08:42:42 IST" duration-ms="39180" status="PASS">
+        <test-method is-config="true" signature="bcConfig()[pri:0, instance:inventoryTests.MakeanOrderTest@1ce24091]" started-at="2025-04-23T08:49:39 IST" name="bcConfig" finished-at="2025-04-23T08:49:47 IST" duration-ms="7508" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- bcConfig -->
-        <test-method is-config="true" signature="bmConfig()[pri:0, instance:inventoryTests.MakeanOrderTest@ba2f4ec]" started-at="2025-04-23T08:42:42 IST" name="bmConfig" finished-at="2025-04-23T08:42:48 IST" duration-ms="5781" status="PASS">
+        <test-method is-config="true" signature="bmConfig()[pri:0, instance:inventoryTests.MakeanOrderTest@1ce24091]" started-at="2025-04-23T08:49:47 IST" name="bmConfig" finished-at="2025-04-23T08:49:53 IST" duration-ms="6243" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- bmConfig -->
-        <test-method signature="tc_001_MakeanOrderTest()[pri:0, instance:inventoryTests.MakeanOrderTest@ba2f4ec]" started-at="2025-04-23T08:42:48 IST" name="tc_001_MakeanOrderTest" finished-at="2025-04-23T08:43:00 IST" duration-ms="11782" status="PASS">
+        <test-method signature="tc_001_MakeanOrderTest()[pri:0, instance:inventoryTests.MakeanOrderTest@1ce24091]" started-at="2025-04-23T08:49:53 IST" name="tc_001_MakeanOrderTest" finished-at="2025-04-23T08:50:04 IST" duration-ms="10916" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tc_001_MakeanOrderTest -->
-        <test-method is-config="true" signature="amConfig()[pri:0, instance:inventoryTests.MakeanOrderTest@ba2f4ec]" started-at="2025-04-23T08:43:00 IST" name="amConfig" finished-at="2025-04-23T08:43:01 IST" duration-ms="490" status="PASS">
+        <test-method is-config="true" signature="amConfig()[pri:0, instance:inventoryTests.MakeanOrderTest@1ce24091]" started-at="2025-04-23T08:50:04 IST" name="amConfig" finished-at="2025-04-23T08:50:04 IST" duration-ms="490" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- amConfig -->
-        <test-method is-config="true" signature="acConfig()[pri:0, instance:inventoryTests.MakeanOrderTest@ba2f4ec]" started-at="2025-04-23T08:43:01 IST" name="acConfig" finished-at="2025-04-23T08:43:02 IST" duration-ms="1826" status="PASS">
+        <test-method is-config="true" signature="acConfig()[pri:0, instance:inventoryTests.MakeanOrderTest@1ce24091]" started-at="2025-04-23T08:50:04 IST" name="acConfig" finished-at="2025-04-23T08:50:06 IST" duration-ms="1538" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- acConfig -->
-        <test-method is-config="true" signature="asConfig()[pri:0, instance:inventoryTests.MakeanOrderTest@ba2f4ec]" started-at="2025-04-23T08:43:02 IST" name="asConfig" finished-at="2025-04-23T08:43:02 IST" duration-ms="2" status="PASS">
+      </class> <!-- inventoryTests.MakeanOrderTest -->
+      <class name="inventoryTests.AddLowestPriceProducttoCartTest">
+        <test-method is-config="true" signature="bsConfig()[pri:0, instance:inventoryTests.AddLowestPriceProducttoCartTest@367ffa75]" started-at="2025-04-23T08:49:13 IST" name="bsConfig" finished-at="2025-04-23T08:49:13 IST" duration-ms="23" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bsConfig -->
+        <test-method is-config="true" signature="bcConfig()[pri:0, instance:inventoryTests.AddLowestPriceProducttoCartTest@367ffa75]" started-at="2025-04-23T08:49:13 IST" name="bcConfig" finished-at="2025-04-23T08:49:23 IST" duration-ms="9699" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bcConfig -->
+        <test-method is-config="true" signature="bmConfig()[pri:0, instance:inventoryTests.AddLowestPriceProducttoCartTest@367ffa75]" started-at="2025-04-23T08:49:23 IST" name="bmConfig" finished-at="2025-04-23T08:49:29 IST" duration-ms="5894" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bmConfig -->
+        <test-method signature="addLowestPriceProductTest()[pri:0, instance:inventoryTests.AddLowestPriceProducttoCartTest@367ffa75]" started-at="2025-04-23T08:49:29 IST" name="addLowestPriceProductTest" finished-at="2025-04-23T08:49:37 IST" duration-ms="7902" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addLowestPriceProductTest -->
+        <test-method is-config="true" signature="amConfig()[pri:0, instance:inventoryTests.AddLowestPriceProducttoCartTest@367ffa75]" started-at="2025-04-23T08:49:37 IST" name="amConfig" finished-at="2025-04-23T08:49:37 IST" duration-ms="529" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- amConfig -->
+        <test-method is-config="true" signature="acConfig()[pri:0, instance:inventoryTests.AddLowestPriceProducttoCartTest@367ffa75]" started-at="2025-04-23T08:49:37 IST" name="acConfig" finished-at="2025-04-23T08:49:39 IST" duration-ms="1810" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- acConfig -->
+        <test-method is-config="true" signature="asConfig()[pri:0, instance:inventoryTests.AddLowestPriceProducttoCartTest@367ffa75]" started-at="2025-04-23T08:50:07 IST" name="asConfig" finished-at="2025-04-23T08:50:07 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- asConfig -->
-      </class> <!-- inventoryTests.MakeanOrderTest -->
+      </class> <!-- inventoryTests.AddLowestPriceProducttoCartTest -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>
